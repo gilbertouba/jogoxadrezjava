@@ -1,10 +1,12 @@
 package application;
 
-import boardgame.Position;
+import chess.*;
+import application.UI;
 
 public class TestaPostion {
     public static void main(String[] args) {
-         Position pos = new Position(1, 10);
-         System.out.println(pos.toString());
+        ChessMatch chessmatch = new ChessMatch();
+        UI.printBoard(chessmatch.getPieces());
+
     }    
 }
